@@ -24,13 +24,11 @@ public class DoublyLinkedList {
     }
 
     public void insertAtBeginning(int data){
-
-        //Incase of single element
-        if(tail == null){
-            tail = head;
-        }
-
         Node node = new Node(data, null, head);
+        //Incase of single element
+        if(head != null){
+            head.previous = node;
+        }
         head = node;
         listSize++;
     }
@@ -103,6 +101,18 @@ public class DoublyLinkedList {
         }
     }
 
+    public void revDisplay(){
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+
+        while(temp != null){
+            System.out.print(temp.data + "->");
+            temp = temp.previous;
+        }
+    }
+
     public void display(){
         Node temp = head;
         while(temp != null){
@@ -121,6 +131,7 @@ public class DoublyLinkedList {
         dll.insertAtEnd(9);
         dll.insertAtAnyPosition(2, 1);
         dll.deleteAtAnyPosition(5);
-        dll.display();
+        dll.revDisplay();
+        //dll.display();
     }
 }
