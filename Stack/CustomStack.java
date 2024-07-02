@@ -2,7 +2,7 @@
 public class CustomStack {
 
     protected int[] data;
-    public static int DEFAULT_SIZE = 10;
+    public static int DEFAULT_SIZE = 5;
     int pointer = 0;
 
     public CustomStack(int size){
@@ -14,7 +14,7 @@ public class CustomStack {
     }
 
     public boolean isFull(){
-        return pointer == data.length-1;
+        return pointer == data.length;
     }
 
     public boolean isEmpty(){
