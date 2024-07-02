@@ -5,6 +5,9 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/arrays" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/linked_list" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/arrays_leetcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/two_pointers_leetcode" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Stack" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
